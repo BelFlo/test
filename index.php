@@ -12,49 +12,54 @@ include('sidebar1.php');
 </head>
 
 <body>
-    <div>
-        <div class="contenedor">
-            <div class="col text-center">
-                <form action="./conexion/nuevoUsuario.php" method="post">
-                    <div class="mb-4 col-10">
-                        <label for="nombre" class="form-label">Nombre(s):</label>
-                        <input type="text" name="nombre" placeholder="Ingrese su nombre" class="form-control">
-                    </div>
+     <div>
+                            <div class="contenedor">
+                                <div class="col text-center">
+                                    <form action="" method="post">
+                                        <div class="col-md-12">
+                                        <label for="nombre" class="form-label">Nombre(s):</label>
+                                        <input type="text" name="nombre" placeholder="Ingrese su nombre" class="form-control">
+                                        </div>
 
-                    <div class="input-group mb-3 col-4">
-                        <label for="apellidoPaterno" class="form-label col-2">Apellido Paterno:</label>
-                        <input type="text" name="apellidoPaterno" placeholder="Apellido Paterno" class="form-control">
+                                        <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label for="apellidoPaterno" class="form-label">Apellido Paterno: </label>
+                                            <input type="text" class="form-control" id="apellidoPaterno" placeholder="Apellido Paterno">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="apellidoMaterno" class="form-label">Apellido Materno: </label>
+                                            <input type="text" class="form-control" id="apellidoMaterno" placeholder="Apellido Materno">
+                                        </div>
+                                        </div>
 
-                        <label for="apellidoMaterno" class="floatingInputValue">Apellido Materno:</label>
-                        <input type="text" name="apellidoMaterno" placeholder="Apellido Materno" class="form-control">
-                    </div>
-
-                    <div class="col-6">
-                        <label for="correo" class="form-label">Correo:</label>
-                        <input type="email" name="correo" placeholder="Ingrese su correo" class="form-control">
-                    </div>
-
-                    <div class="col-6">
-                        <label for="contra" class="form-label">Contraseña:</label>
-                        <input type="password" name="contra" placeholder="Ingrese su contraseña" class="form-control">
-                    </div>
-
-                    <div class="col-12 mb-3">
-                        <label for="departamento" class="form-label">Departamento:</label>
-                        <select name="departamento" class="form-control">
-                            <option value="Orientacion_Nutricional">Orientación nutricional</option>
-                            <option value="Soporte_Tecnico">Soporte Técnico</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-6">
-                        <input type="submit" value="Continuar">
-                    </div>
-
-                </form>
-            </div>
-        </div>
-    </div>
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputEmail4" class="form-label md-6">Email: </label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="inputPassword4" class="form-label">Password: </label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-12 mb-3">
+                                        <label for="departamento" class="form-label">Departamento:</label>
+                                        <select name="departamento" class="form-control" aria-label="Default select example">
+                                            <option value="orientacion">Orientación nutricional</option>
+                                            <option value="soporte">Soporte Técnico</option>
+                                        </select>
+                                        </div>
+                                        
+                                        <div class="mb-6">
+                                         <button type="submit" class="btn">Continuar</button>
+                                        </div>
+                                
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        
 
 
     </main>
